@@ -1,0 +1,61 @@
+.form_container{
+    display: none;
+}
+.resultat{
+    display: none;
+}
+.stat_cnt{
+    width: 100%;
+    height: 50px;
+    background-color: darkred;
+    margin: 20px 0px;
+}
+#stat_fill{
+    height: 50px;
+    background-color: #00b0ff;
+
+}
+body{
+    transition: all ease-in 0.4s;
+
+}
+
+@-webkit-keyframes lol /* Safari and Chrome */ {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate3d(1, 2, -1, 192deg);
+        -moz-transform: rotate3d(1, 2, -1, 192deg);
+        -webkit-transform: rotate3d(1, 2, -1, 192deg);
+        -o-transform: rotate3d(1, 2, -1, 192deg);
+        transform: rotate3d(1, 2, -1, 192deg);
+    }
+}
+@keyframes lol {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate3d(1, 2, -1, 192deg);
+        -moz-transform: rotate3d(1, 2, -1, 192deg);
+        -webkit-transform: rotate3d(1, 2, -1, 192deg);
+        -o-transform: rotate3d(1, 2, -1, 192deg);
+        transform: rotate3d(1, 2, -1, 192deg);
+    }
+}
+.lol {
+    -webkit-animation: lol 2s linear infinite;
+    -moz-animation: lol 2s linear infinite;
+    -ms-animation: lol 2s linear infinite;
+    -o-animation: lol 2s linear infinite;
+    animation: lol 2s linear infinite;
+}

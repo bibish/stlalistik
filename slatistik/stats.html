@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>bibish</title>
+    <meta name="description" content="c'est ici qu'on samuse avec les chiffres" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+<nav class="grey darken-2">
+    <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="untitled.html">home</a></li>
+            <li><a href="stats.html">creation</a></li>
+            <li><a href="liste.html">liste des stats</a></li>
+            <li><a href="https://mythologica.fr/celte/ogma.htm">a propos</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="untitled.html">home</a></li>
+            <li><a href="stats.html">creation</a></li>
+            <li><a href="liste.html">liste des stats</a></li>
+            <li><a href="https://mythologica.fr/celte/ogma.htm">a propos</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <main class="row stats">
+        <div class="col s12 m12 l12 center connect_container">
+            <h1 class="center">Il y a envion 76.77% de chance que ca fonctionne !</h1>
+            <h2 class="center">Creez votre propre statistique gratuitement !</h2>
+            <a class="waves-effect waves-light btn " id="googleConnect">c'est par ici !</a>
+        </div>
+        <div class="s12 m12 l12 form_container">
+            <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">votre premier texte de statistique ici !</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="tel" class="validate numberInput" >
+                <label>ici le pour % centage ( entre 0 et 100  .. )</label>
+            </div>
+            <div class="input-field col s12">
+                <textarea id="textarea2" class="materialize-textarea"></textarea>
+                <label for="textarea1">votre second texte de statistique ici !</label>
+            </div>
+            <h4 class="clearfix">exemple : d'apres moi + 92 + des gens vont se planter</h4>
+            <a class="waves-effect waves-light btn " id="go_stat">Creer !</a>
+
+        </div>
+        <div class="col s12 resultat">
+            <h3>Voilà votre stat :</h3>
+            <h4 class="stat_write"></h4>
+            <div class="s12 stat_cnt">
+                <div id="stat_fill"></div>
+            </div>
+            <a class="waves-effect waves-light btn " id="again">Creer une autre stat !</a>
+            <a class="waves-effect waves-light btn " href="liste.html" id="stat_list">liste des stats</a>
+
+        </div>
+        <div class="fixed-action-btn deconnect-btn">
+            <a class="btn-floating btn-large waves-effect waves-light grey darken-2"><i class="material-icons">power_settings_new</i></a>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script type="text/javascript" src="js/track.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
